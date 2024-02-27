@@ -73,10 +73,10 @@
         default_layer {        
             label = "Default";              					  
 		    bindings = <
-        &kp GRAVE           &kp Q       &kp W       &kp E       &kp R         &kp T                                             &kp Y                   &kp U         &kp I         &kp O       &kp P           &kp BSLH
-        &kp ESC             &hs LSHFT A &hm LALT S  &hm LCTL D  &hm LGUI F    &kp G              &mt LA(SPACE) LG(SPACE)        &kp H                   &hm RCMD J    &hm RCTRL K   &hm RALT L  &hs LSHFT SEMI  &kp SQT
-        &mt LSHIFT LPAR     &kp Z       &kp X       &kp C       &kp V         &kp B                       &none                 &kp N                   &kp M         &kp COMMA     &kp DOT     &kp FSLH        &mt RSHIFT RPAR
-        &none               &none       &none       &mo LWR     &kp LCMD      &am LS(LALT) SPACE          &none                 &am LS(RC(LALT)) BSPC   &kp TAB       &mo RAS       &none       &none           &none
+        &kp GRAVE           &kp Q       &kp W       &kp E       &kp R         &kp T                                    &kp Y       &kp U         &kp I         &kp O       &kp P           &kp BSPC
+        &kp ESC             &kp A       &kp S       &kp D       &kp F         &kp G           &kp  LA(TAB)             &kp H       &kp J         &kp K         &kp L       &kp SEMI        &kp SQT
+        &kp LSHIFT          &kp Z       &kp X       &kp C       &kp V         &kp B              &none                 &kp N       &kp M         &kp COMMA     &kp DOT     &kp FSLH        &kp ENTER
+        &none               &none       &none       &mo LWR     &kp LCMD      &kp SPACE          &none                 &kp SPACE   &kp TAB       &mo RAS       &none       &none           &none
                         >;
 			            sensor-bindings = <&inc_dec_kp LG(LS(RBKT)) LG(LS(LBKT))>;
                 };
@@ -84,20 +84,20 @@
         lower_layer {        
             label = "Lower";              					  
 		    bindings = <
-        &none               &none       &none       &none       &none           &none                                           &kp N6                  &kp N7        &kp N8        &kp N9      &kp N0          &kp MINUS
-        &none               &none       &none       &none       &none           &none               &kp LA(RG(SPACE))           &kp LEFT                &kp DOWN      &kp UP        &kp RIGHT   &trans          &none 
-        &trans              &none       &none       &none       &none           &none                    &none                  &kp LBKT                &kp RBKT      &kp PG_UP     &kp END     &none           &trans
-        &none               &none       &none       &trans      &none           &trans                   &none                  &trans                  &kp ENTER     &trans        &none       &none           &trans
+        &LA(TAB)            &kp LEFT_BRACE         &kp RIGHT_BRACE         &kp LEFT_BRACKET       &kp RIGHT_BRACKET      &kp F11                                      &none        &none       &kp UP      &kp MINUS   &kp EQUAL       &kp DEL 
+        &none               &kp F1                 &kp F2                  &kp F3                 &kp F4                 &kp F5           &kp LA(RG(SPACE))           &kp HOME     &kp LEFT    &kp DOWN    &kp RIGHT   &trans          &kp PIPE 
+        &trans              &kp F6                 &kp F7                  &kp F8                 &kp F9                 &kp F10               &none                  &kp END      &none       &kp PG_UP   &kp END     &none           &kp ENTER
+        &none               &none                  &none                   &trans                 &none                  &kp F12               &none                  &trans       &kp bck     &kp PG_DN   &none       &none           &trans
                         >;
                         sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
                 };
         raise_layer {        
             label = "Raise";              					  
 		    bindings = <
-        &kp EQUAL           &kp N1      &kp N2      &kp N3      &kp N4          &kp N5                                          &none                   &none         &none         &none       &none           &none 
-        &none               &none       &none       &none       &none           &none                    &none                  &kp LEFT                &kp DOWN      &kp UP        &kp RIGHT   &trans          &none 
-        &trans              &none       &none       &none       &kp LBRC        &kp RBRC                 &none                  &kp HOME                &kp PG_DN     &kp PG_UP     &kp END     &none           &trans
-        &none               &none       &none       &trans      &none           &trans                   &none                  &trans                  &none         &trans        &none       &kp C_MUTE      &trans
+        &kp EQUAL           &kp N1      &kp N2      &kp N3     &kp LEFT_BRACKET   &kp RIGHT_BRACKET                                  &none                   &none         &none         &none       &none             &none 
+        &none               &kp N4      &kp N5      &kp N6     &kp LPAR           &kp RPAR                   &none                  &kp LEFT                &kp DOWN      &kp UP        &kp RIGHT   &kp LEFT_BRACKET  &kp RIGHT_BRACKET 
+        &trans              &kp N7      &kp N8      &kp N9     &kp N0             &none                      &none                  &kp HOME                &kp END       &kp PG_DN     &kp PG_UP   &none             &trans
+        &none               &none       &none       &trans     &none             &trans                      &none                  &trans                  &none         &trans        &none       &kp C_MUTE        &trans
                         >;
 			            sensor-bindings = <&inc_dec_kp LG(LS(RBKT)) LG(LS(LBKT))>;
                 };
