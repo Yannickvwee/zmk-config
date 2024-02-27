@@ -73,8 +73,8 @@
         default_layer {        
             label = "Default";              					  
 		    bindings = <
-        &kp GRAVE           &kp Q       &kp W       &kp E       &kp R         &kp T                                    &kp Y       &kp U         &kp I         &kp O       &kp P           &kp BSPC
-        &kp ESC             &kp A       &kp S       &kp D       &kp F         &kp G           &kp  LA(TAB)             &kp H       &kp J         &kp K         &kp L       &kp SEMI        &kp SQT
+        &kp ESC           &kp Q       &kp W       &kp E       &kp R         &kp T                                    &kp Y       &kp U         &kp I         &kp O       &kp P           &kp BSPC
+        &kp LCTRL             &kp A       &kp S       &kp D       &kp F         &kp G           &kp  LALT                &kp H       &kp J         &kp K         &kp L       &kp SEMI        &kp SQT
         &kp LSHIFT          &kp Z       &kp X       &kp C       &kp V         &kp B              &none                 &kp N       &kp M         &kp COMMA     &kp DOT     &kp FSLH        &kp ENTER
         &none               &none       &none       &mo LWR     &kp LCMD      &kp SPACE          &none                 &kp SPACE   &kp TAB       &mo RAS       &none       &none           &none
                         >;
@@ -84,8 +84,8 @@
         lower_layer {        
             label = "Lower";              					  
 		    bindings = <
-        &kp LA(TAB)         &kp LEFT_BRACE         &kp RIGHT_BRACE         &kp LEFT_BRACKET       &kp RIGHT_BRACKET      &kp F11                                   &none        &none       &kp UP      &kp MINUS   &kp EQUAL       &kp DEL 
-        &none               &kp F1                 &kp F2                  &kp F3                 &kp F4                 &kp F5           &kp LA(RG(SPACE))           &kp HOME     &kp LEFT    &kp DOWN    &kp RIGHT   &trans          &kp PIPE 
+        &kp GRAVE         &kp LEFT_BRACE         &kp RIGHT_BRACE         &kp LEFT_BRACKET       &kp RIGHT_BRACKET      &kp F11                                   &none        &none       &kp UP      &kp MINUS   &kp EQUAL       &kp DEL 
+        &kp ESC             &kp F1                 &kp F2                  &kp F3                 &kp F4                 &kp F5           &kp LA(RG(SPACE))           &kp HOME     &kp LEFT    &kp DOWN    &kp RIGHT   &trans          &kp PIPE 
         &trans              &kp F6                 &kp F7                  &kp F8                 &kp F9                 &kp F10               &none                  &kp END      &none       &kp PG_UP   &kp END     &none           &kp ENTER
         &none               &none                  &none                   &trans                 &none                  &kp F12               &none                  &mo ADJ       &kp BSPC     &kp PG_DN   &none       &none           &none
                         >;
